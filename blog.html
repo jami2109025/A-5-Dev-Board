@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="mx-auto bg-gray-100">
+    <nav class="mx-25 bg-gray-100 pt-3 ">
+        <div class="navbar bg-base-100 shadow-sm border-x-white rounded-lg">
+            <div class="navbar-start">
+                <img src="assets/logo.png" alt="">
+                <a class="btn btn-ghost text-3xl">Dev<span class="font-bold">Board</span></a>
+            </div>
+
+            <div class="navbar-end">
+                <button id="back-to-desk" class="btn bg-blue-600 text-white rounded-lg px-5">Back to Desk</button>
+            </div>
+        </div>
+    </nav>
+    <main class=" bg-gray-100 mx-25 py-5 mt-1 rounded-lg space-x-2 space-y-5">
+        <h1 class="flex justify-center items-center text-2xl font-medium my-5">Blogs</h1>
+        <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title font-semibold">Question-1: What are the different ways to select an element in the DOM?<hr class="text-gray-100"></div>
+            
+            <div class="collapse-content text-sm">1.getElementById() <br>2.getElementsByClassName()	<br>3.getElementsByTagName() <br> 4.querySelector()	<br>5.querySelectorAll()</div>
+        </div>
+        <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?<hr class="text-gray-100"></div>
+            
+            <div class="collapse-content text-sm">-> innerHTML is used to insert HTML elements inside an element. <br>
+            -> innerText is used to visible only text and ignore hidden elements. <br>
+            -> textContent is used to show all text (including hidden elements)</div>
+        </div>
+        <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title font-semibold">Question-3: What is event delegation in the DOM?<hr class="text-gray-100"></div>
+            
+            <div class="collapse-content text-sm">Event delegation event handle korar ekta efficient way. Jodi amader onek gulo similar element thake (jemon list er item), tahole proti ta element er jonno alada event listener add na kore, amra shudhu matro parent element er upore ekta event listener add korte pari. Tarpor event jokhon hoy, event.target diye amra check korte pari kon specific element e event ta hoyeche.</div>
+        </div>
+        <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title font-semibold">Question-4: What is event bubbling in the DOM?
+            <hr class="text-gray-100"></div>
+            
+            <div class="collapse-content text-sm">Event bubbling holo JavaScript er ekta mechanism jekhane kono child element e ghote jawa event tar parent element gulor modhye uporer dike choriye pore. Er maney, jodi kono child element e event ghote (jemon click), tahole sei event ta tar parent, grandparent, aro uporer element gulokeu trigger korbe.</div>
+        </div>
+        <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?<hr class="text-gray-100"></div>
+            
+            <div class="collapse-content text-sm">1. Create an element: document.createElement() <br>
+            2. Add an element: parent.appendChild() <br>
+            3. Remove an element: parent.removeChild()</div>
+        </div>
+        
+    </main>
+    <script src="jscript/blog.js"></script>
+</body>
+</html>

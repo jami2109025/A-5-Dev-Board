@@ -10,7 +10,7 @@
 </head>
 
 <body class="mx-auto bg-gray-100">
-    <nav class="mx-25 bg-gray-100 pt-3 ">
+    <nav class="mx-25 pt-3 ">
         <div class="navbar bg-base-100 shadow-sm border-x-white rounded-lg">
             <div class="navbar-start">
                 <img src="assets/logo.png" alt="">
@@ -20,17 +20,17 @@
             <div class="navbar-end">
                 <div class="flex border rounded-full bg-gray-100">
                     <button class="px-2"><img src="assets/checkbox.png" alt=""></button>
-                    <h1 class="font-bold text-2xl pr-2">23</h1>
+                    <h1 id="day" class="font-bold text-2xl pr-2">23</h1>
                 </div>
                 <div class="pl-8">
-                    <button class="border-white bg-gray-100 rounded-full p-2"><img class="" src="assets/theme-btn.png"
+                    <button id="bg-color" class="border-white bg-gray-100 rounded-full p-2"><img class="" src="assets/theme-btn.png"
                             alt=""></button>
                 </div>
             </div>
         </div>
     </nav>
 
-    <main class=" bg-gray-100 mx-25 py-5 mt-1 flex flex-1 rounded-lg space-x-2">
+    <main class="mx-25 py-5 mt-1 flex flex-1 rounded-lg space-x-2">
         <div class="bg-white p-5 col-span-2 rounded-lg w-10/12">
             <section class="rounded-lg flex flex-auto space-x-5">
                 <div class="flex bg-gray-100 rounded-lg p-6 w-70">
@@ -39,20 +39,19 @@
                     </div>
                     <div class="px-5">
                         <h1 class=" text-1xl">Task Assigned</h1>
-                        <h1 class="font-bold text-3xl">06</h1>
+                        <h1 id="task-assign" class="font-bold text-3xl">06</h1>
                     </div>
                 </div>
-                <div class="bg-gradient-to-r from-blue-800 to-blue-400 p-6 text-white flex rounded-lg w-96 ">
+                <div id="discover-st-new-today" class="bg-gradient-to-r from-blue-800 to-blue-400 p-6 text-white flex rounded-lg w-96 ">
                     <img src="assets/board.png" alt="">
                     <h1>Discover Something <br> New Today!</h1>
                 </div>
                 <div class="flex bg-gray-100 rounded-lg p-6 w-70">
                     <div>
-                        <img class="border-white bg-white rounded-full p-2" src="assets/calender.png" alt="">
+                        <img class="border-white bg-white rounded-xl p-2" src="assets/calender.png" alt="">
                     </div>
                     <div class="px-5">
-                        <h1 class=" text-1xl">Wed,</h1>
-                        <h1 class="font-bold text-2xl">July 28,2025</h1>
+                        <h1 id="date" class="font-bold text-2xl">Wed,July 28,2025</h1>
                     </div>
                 </div>
             </section>
@@ -60,7 +59,7 @@
             <section class="grid grid-cols-3 space-y-3 space-x-3">
                 <div class="px-5 pt-5 rounded-lg bg-gray-100 space-y-3">
                     <button class="bg-white rounded-lg p-2 mr-50 text-xl">ShopEase</button>
-                    <h2 class="text-2xl">Fix Mobile Button Issue</h2>
+                    <h2 id="complete-text" class="text-2xl">Fix Mobile Button Issue</h2>
                     <p class="border-white rounded-lg bg-white p-3 text-gray-400">Debug using Chrome DevTools, check for
                         overlapping elements</p>
                     <hr class="border-dashed m-1 mb-5 text-gray-300">
@@ -69,12 +68,12 @@
                             <h1 class="text-gray-500">DeadLine</h1>
                             <h1 class="font-medium">21 March,2025</h1>
                         </div>
-                        <button class="btn bg-blue-600 text-white rounded-lg px-5">Completed</button>
+                        <button id="complete" class="btn bg-blue-600 text-white rounded-lg px-5">Completed</button>
                     </div>
                 </div>
                 <div class="px-5 pt-5 rounded-lg bg-gray-100 space-y-3">
                     <button class="bg-white rounded-lg p-2 mr-50 text-xl">CloudSync</button>
-                    <h2 class="text-2xl">Add Dark Mode</h2>
+                    <h2 id="complete-text-2" class="text-2xl">Add Dark Mode</h2>
                     <p class="border-white rounded-lg bg-white p-3 text-gray-400">Store the user's preference in
                         localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                     <hr class="border-dashed m-1 mb-5 text-gray-300">
@@ -83,12 +82,12 @@
                             <h1 class="text-gray-500">DeadLine</h1>
                             <h1 class="font-medium">21 March,2025</h1>
                         </div>
-                        <button class="btn bg-blue-600 text-white rounded-lg px-5">Completed</button>
+                        <button id="complete-2" class="btn bg-blue-600 text-white rounded-lg px-5">Completed</button>
                     </div>
                 </div>
                 <div class="px-5 pt-5 rounded-lg bg-gray-100 space-y-3">
                     <button class="bg-white rounded-lg p-2 mr-50 text-xl">SwiftPay</button>
-                    <h2 class="text-2xl">Optimize Home Page</h2>
+                    <h2 id="complete-text-3" class="text-2xl">Optimize Home Page</h2>
                     <p class="border-white rounded-lg bg-white p-3 text-gray-400">Debug using Chrome DevTools, check for
                         overlapping elements</p>
                     <hr class="border-dashed m-1 mb-5 text-gray-300">
@@ -97,12 +96,12 @@
                             <h1 class="text-gray-500">DeadLine</h1>
                             <h1 class="font-medium">21 March,2025</h1>
                         </div>
-                        <button class="btn bg-blue-600 text-white rounded-lg px-5">Completed</button>
+                        <button id="complete-3" class="btn bg-blue-600 text-white rounded-lg px-5">Completed</button>
                     </div>
                 </div>
                 <div class="px-5 pt-5 rounded-lg bg-gray-100 space-y-3">
                     <button class="bg-white rounded-lg p-2 mr-50 text-xl">Meta</button>
-                    <h2 class="text-2xl">Add New Imoji🤲</h2>
+                    <h2 id="complete-text-4" class="text-2xl">Add New Imoji🤲</h2>
                     <p class="border-white rounded-lg bg-white p-3 text-gray-400">Debug using Chrome DevTools, check for
                         overlapping elements.</p>
                     <hr class="border-dashed m-1 mb-5 text-gray-300">
@@ -111,12 +110,12 @@
                             <h1 class="text-gray-500">DeadLine</h1>
                             <h1 class="font-medium">21 March,2025</h1>
                         </div>
-                        <button class="btn bg-blue-600 text-white rounded-lg px-5">Completed</button>
+                        <button id="complete-4" class="btn bg-blue-600 text-white rounded-lg px-5">Completed</button>
                     </div>
                 </div>
                 <div class="px-5 pt-5 rounded-lg bg-gray-100 space-y-3">
                     <button class="bg-white rounded-lg p-2  mx-auto text-xl">Google LLC</button>
-                    <h2 class="text-2xl">Integrate OpenAI API</h2>
+                    <h2 id="complete-text-5" class="text-2xl">Integrate OpenAI API</h2>
                     <p class="border-white rounded-lg bg-white p-3 text-gray-400">Debug using Chrome DevTools, check for
                         overlapping elements</p>
                     <hr class="border-dashed m-1 mb-5 text-gray-300">
@@ -125,12 +124,12 @@
                             <h1 class="text-gray-500">DeadLine</h1>
                             <h1 class="font-medium">21 March,2025</h1>
                         </div>
-                        <button class="btn bg-blue-600 text-white rounded-lg px-5">Completed</button>
+                        <button id="complete-5" class="btn bg-blue-600 text-white rounded-lg px-5">Completed</button>
                     </div>
                 </div>
                 <div class="px-5 pt-5 rounded-lg bg-gray-100 space-y-3">
                     <button class="bg-white rounded-lg p-2 mr-50 text-xl">Glassdoor</button>
-                    <h2 class="text-2xl">Improve Job Searching</h2>
+                    <h2 id="complete-text-6" class="text-2xl">Improve Job Searching</h2>
                     <p class="border-white rounded-lg bg-white p-3 text-gray-400">Debug using Chrome DevTools, check for
                         overlapping elements</p>
                     <hr class="border-dashed m-1 mb-5 text-gray-300">
@@ -139,7 +138,7 @@
                             <h1 class="text-gray-500">DeadLine</h1>
                             <h1 class="font-medium">21 March,2025</h1>
                         </div>
-                        <button class="btn bg-blue-600 text-white rounded-lg px-5">Completed</button>
+                        <button id="complete-6" class="btn bg-blue-600 text-white rounded-lg px-5">Completed</button>
                     </div>
                 </div>
 
@@ -152,12 +151,15 @@
                 <h1>Activity Log</h1>
             </div>
             <div class=" flex justify-center items-center">
-                <button class="btn bg-blue-600 text-white rounded-lg px-5">Clear History</button>
+                <button id="clear-history" class="btn bg-blue-600 text-white rounded-lg px-5">Clear History</button>
             </div>
             <hr class="my-5 border-dashed text-gray-300">
+            <div id="history"></div>
         </div>
     </main>
-
+    <script src="jscript/date.js"></script>
+    <script src="utilities/utilities.js"></script>
+    <script src="jscript/index.js"></script>
 </body>
 
 </html>
